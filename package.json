@@ -1,0 +1,28 @@
+{
+  "name": "masterofcode_test_task",
+  "version": "1.0.0",
+  "description": "sigle page layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucozlab/masterofcode_test_task.git"
+  },
+  "author": "Artem Luzhanovskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucozlab/masterofcode_test_task/issues"
+  },
+  "homepage": "https://github.com/ucozlab/masterofcode_test_task#readme",
+  "devDependencies": {
+    "npm-font-open-sans": "0.0.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-less-sourcemap": "^1.4.3",
+    "gulp-watch-less": "^1.0.1"
+  }
+}
