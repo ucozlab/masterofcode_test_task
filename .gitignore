@@ -1,4 +1,6 @@
-.gitignore
 .idea
-node_modules
 design
+node_modules/*
+!/node_modules/bootstrap
+!/node_modules/font-awesome
+!/node_modules/npm-font-open-sans

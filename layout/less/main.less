@@ -1,5 +1,7 @@
 @import (reference) "config.less";
-
+html, body {
+	height: 100%;
+}
 body {
 	background-color: darken(@white, 4.7%);
 	.basefont;
@@ -19,4 +21,21 @@ a {
 		color: @blue;
 		outline: 0;
 	}
+}
+.page {
+	min-height: 100%;
+	margin-bottom: -40px;
+}
+.footer {
+	height: 40px;
+	position: relative;
+	z-index: 10;
+	background: @blue;
+}
+.copyright {
+	
+}
+.hFooter {
+	clear: both;
+	height: 40px;
 }

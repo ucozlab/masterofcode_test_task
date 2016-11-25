@@ -1,12 +1,11 @@
-var gulp       = require('gulp');  
-var less       = require('gulp-less');  
-var watch      = require('gulp-watch');
-var cleanCSS   = require('gulp-clean-css');
-var concat     = require('gulp-concat');
+var gulp     = require('gulp'),
+	less     = require('gulp-less'),
+	watch    = require('gulp-watch'),
+	cleanCSS = require('gulp-clean-css'),
+	concat   = require('gulp-concat');
 
-gulp.task('compile-less', function() {  
-	gulp.src(['./node_modules/npm-font-open-sans/open-sans.less','./layout/less/style.less'])
-		.pipe(concat('style.less'))
+gulp.task('compile-less', function() {
+	gulp.src('./layout/less/style.less')
 		.pipe(less())
 		.pipe(cleanCSS({advanced : false}))
 		.pipe(gulp.dest('./layout/css/'));

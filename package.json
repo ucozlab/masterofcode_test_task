@@ -16,8 +16,12 @@
     "url": "https://github.com/ucozlab/masterofcode_test_task/issues"
   },
   "homepage": "https://github.com/ucozlab/masterofcode_test_task#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "npm-font-open-sans": "0.0.3"
+  },
   "devDependencies": {
-    "npm-font-open-sans": "0.0.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",
