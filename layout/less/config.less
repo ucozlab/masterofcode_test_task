@@ -5,10 +5,13 @@
 
 /*colors*/
 
-@white: #ffffff;
-@gray:  #777777;
-@blue:  #62bdbd;
-@red:   #e1524b;
+@white:  #ffffff;
+@gray:   #777777;
+@blue:   #62bdbd;
+@red:    #e8645a;
+
+@active: #62a29e;
+@red2:   #e2534b;
 
 .basefont {
 	font-family: @font;
@@ -17,7 +20,14 @@
 	line-height: @mainLineHeight;
 	font-weight: normal;
 }
-
+.fontawesome {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 .border-radius( @radius: 3px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
