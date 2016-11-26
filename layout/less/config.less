@@ -12,6 +12,9 @@
 
 @active: #62a29e;
 @red2:   #e2534b;
+@dark:   #3f4646;
+@gray2:  #b0b8b9;
+@intro:  #ececec;
 
 .basefont {
 	font-family: @font;
@@ -186,7 +189,7 @@
 	display: -webkit-flex;
 	display: flex;
 }
-.displaynone {
+.displaynone, .collapse {
 	display: none;
 }
 .wrapper {
@@ -251,4 +254,24 @@
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
+}
+
+.red-button {
+	.border-radius(4px);
+	background: @red;
+	border-bottom: 2px solid darken(@red, 8%);
+	color: @white;
+}
+.blue-button {
+	.border-radius(4px);
+	background-color: @active;
+	border-bottom: 2px solid darken(@active, 8%);
+	color: @white;
+}
+.large-button {
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 42px;
+	text-transform: uppercase;
+	font-size: 20px;
 }
