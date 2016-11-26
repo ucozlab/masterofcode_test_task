@@ -127,8 +127,8 @@
 			background: none;
 			border: 2px solid transparent;
 			width: 30px;
-			height: 30px;
-			padding: 4px 24px 4px 8px;
+			height: 32px;
+			padding: 5px 24px 5px 8px;
 			color: @white;
 			&:focus {
 				width: 130px;
@@ -156,6 +156,7 @@
 		}
 		&:after {
 			.fontawesome;
+			.transition;
 			content: "\f002";
 			color: @white;
 			font-size: 14px;
@@ -164,6 +165,9 @@
 			left: 0;
 			width: 15px;
 			height: 15px;
+		}
+		&:hover:after {
+			color: @red2;
 		}
 	}
 }
