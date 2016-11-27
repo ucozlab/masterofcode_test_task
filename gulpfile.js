@@ -1,10 +1,11 @@
-var gulp     = require('gulp'),
-	less     = require('gulp-less'),
-	watch    = require('gulp-watch'),
-	cleanCSS = require('gulp-clean-css'),
-	concat   = require('gulp-concat'),
-	uglify   = require('gulp-uglifyjs'),
-	paths    = {
+var gulp         = require('gulp'),
+	less         = require('gulp-less'),
+	watch        = require('gulp-watch'),
+	cleanCSS     = require('gulp-clean-css'),
+	concat       = require('gulp-concat'),
+	autoprefixer = require('gulp-autoprefixer'),
+	uglify       = require('gulp-uglifyjs'),
+	paths        = {
 		scripts : [
 			'./layout/js/src/jquery.min.js',
 			'./layout/js/src/chart.js',
@@ -17,6 +18,10 @@ var gulp     = require('gulp'),
 gulp.task('compile-less', function() {
 	gulp.src('./layout/less/style.less')
 		.pipe(less())
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
 		.pipe(cleanCSS({advanced : false}))
 		.pipe(gulp.dest('./layout/css/'));
 });
