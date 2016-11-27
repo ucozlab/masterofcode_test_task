@@ -356,11 +356,23 @@
 }));
 
 $(document).ready(function(){
-	$('.slider').bxSlider();
-	
+
 	var charts = $('.charts'),
 		showed = false;
+	
+	$('.slider').bxSlider();
 
+	$('.clients-slider').bxSlider({
+		auto: true,
+		slideWidth: 170,
+		slideMargin: 30,
+		minSlides: 1,
+		maxSlides: 6,
+		moveSlides: 1,
+		pager: false
+		//   useCSS: false
+	});
+	
 	$(window).scroll( function(){
 		if (!showed && $(window).scrollTop() + $(window).height() > (charts.offset().top + charts.outerHeight()/2)) {			
 			$('.chart').each( function(i, el){
@@ -382,3 +394,4 @@ $(document).ready(function(){
 		};
 	});
 });
+
