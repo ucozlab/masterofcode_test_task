@@ -261,3 +261,28 @@
 	font-size: 20px;
 	white-space: nowrap;
 }
+.linear {
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 9px;
+		width: 100%;
+		display: block;
+		background: url("../img/linear.svg") repeat-x;
+	}
+}
+.linear-white {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		height: 17px;
+		width: 100%;
+		display: block;
+		background: url("../img/linear-white.svg") repeat-x;
+		background-size: cover;
+	}
+}

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Modus versus - main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
-
 <body>
     <div class="page">
         <header class="header">
@@ -150,10 +148,50 @@
             <div class="about linear-white text-center">
                 <div class="container">
                     <div class="row">
-                        <h2 class="about-title">WHY MODUS VERSUS?</h2>
-                        <p class="about-description">Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
-                        <div class="about-cards">
-                            <div class="maincard"></div>
+                        <div class="col-xs-12">
+                            <h2 class="about-title">WHY MODUS VERSUS?</h2>
+                            <p class="about-description">Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
+                            <div class="about-windows">
+                                <div class="window window-left">
+                                    <div class="overflow">
+                                        <div class="window-dots pull-left">
+                                            <span class="window-dots__dot"></span>
+                                            <span class="window-dots__dot"></span>
+                                            <span class="window-dots__dot"></span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="window-minimize"></span>
+                                        </div>
+                                    </div>
+                                    <button class="window-image" onclick="shuffleCard('left')" style="background-image: url(img/slider/slide2.jpg)"></button>
+                                </div>
+                                <div class="window window-right">
+                                    <div class="overflow">
+                                        <div class="window-dots pull-left">
+                                            <span class="window-dots__dot"></span>
+                                            <span class="window-dots__dot"></span>
+                                            <span class="window-dots__dot"></span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="window-minimize"></span>
+                                        </div>
+                                    </div>
+                                    <button class="window-image" onclick="shuffleCard('right')" style="background-image: url(img/slider/slide3.jpg)"></button>
+                                </div>
+                                <div class="window window-center">
+                                    <div class="overflow">
+                                        <div class="window-dots pull-left">
+                                            <span class="window-dots__dot"></span>
+                                            <span class="window-dots__dot"></span>
+                                            <span class="window-dots__dot"></span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="window-minimize"></span>
+                                        </div>
+                                    </div>
+                                    <button class="window-image" onclick="shuffleCard('center')" title="right page" style="background-image: url(img/slider/slide1.jpg)"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,7 +285,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a class="logo" href="/" title="Main page">Modus <span>versus</span></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                         <div class="contact">
                             <span class="inline-block">Phone:</span><a class="inline-block contact-text" href="tel:+18225695896" title="call us">182 2569 5896</a>
                         </div>
@@ -323,10 +361,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="../node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
-    <script src="js/bootstrap_resize.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
-
 </html>
