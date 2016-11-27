@@ -1,0 +1,117 @@
+.footer {
+	.linear-white;
+	height: 350px;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	background: @blue;
+	color: @white;
+	a {
+		color: @white;
+		&:hover {
+			color: @dark2;
+		}
+	}
+	&-info {
+		height: 300px;
+		padding: 48px 0;
+		background: @blue2;
+	}
+	&-copyright {
+		background: @copyright;
+		line-height: 50px;
+		height: 50px;
+	}
+	&:before{
+		opacity: 0.2;
+	}
+	.logo {
+		display: inline-block;
+		margin-bottom: 20px;
+		line-height: inherit;
+	}
+}
+.social {
+	a {
+		display: inline-block;
+		margin-left: 20px;
+		font-size: 24px;
+	}
+}
+.contact {
+	margin-top: 10px;
+	&:first-of-type {
+		margin-top: 20px;
+	}
+	&-text {
+		font-size: 20px;
+		padding-left: 20px;
+		font-style: italic;
+	}
+}
+.list-title {
+	display: block;
+	margin-bottom: 20px;
+	color: @dark2;
+	font-size: 20px;
+	font-weight: bold;
+	&.list-title-white {
+		color: @white;
+		font-weight:normal;
+	}
+}
+.list {
+	display: inline-block;
+	text-align: left;
+	&-item {
+		position: relative;
+		padding-left: 20px;
+		&:before {
+			.fontawesome;
+			content: "\f105";
+			font-size: 12px;
+			position: absolute;
+			left: 0;
+			top: 7px;
+		}
+	}
+}
+.widget {
+	&-item {
+		.clearfix;
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&__img {
+			.border-radius(4px);
+			float: left;
+			width: 70px;
+			height: 70px;
+			margin-right: 20px;
+			background: @dark2;
+			&:empty {
+				text-align: center;
+				line-height: 70px;
+				&:before {
+					.fontawesome;
+					content: "\f03e";
+					color: rgba(255,255,255,0.5);
+					font-size: 30px;
+					line-height: inherit;
+				}
+			}
+		}
+		&__description {
+			line-height: 19px;
+			overflow: hidden;
+			&-title {
+
+			}
+			&-date {
+				display: block;
+				color: @dark2;
+			}
+		}
+	}
+}

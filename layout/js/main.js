@@ -370,7 +370,6 @@ $(document).ready(function(){
 		maxSlides: 6,
 		moveSlides: 1,
 		pager: false
-		//   useCSS: false
 	});
 	
 	$(window).scroll( function(){
@@ -394,4 +393,3 @@ $(document).ready(function(){
 		};
 	});
 });
-

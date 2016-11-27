@@ -22,38 +22,38 @@
                             <div class="collapse navbar-toggleable-md" id="navbarResponsive">
                                 <ul class="nav">
                                     <li class="nav-item nav-item--active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="#" title="Home">Home <span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="#" title="About">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Services</a>
+                                        <a class="nav-link" href="#" title="Services">Services</a>
                                     </li>
                                     <li class="nav-item nav-item-dropdown">
-                                        <a class="nav-link" href="#">Portfolio</a>
+                                        <a class="nav-link" href="#" title="Portfolio">Portfolio</a>
                                         <div class="nav-item-dropdown__container">
                                             <ul>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#">Portfolio 1 column page</a>
+                                                    <a class="nav-link" href="#" title="Portfolio 1 column page">Portfolio 1 column page</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#">Portfolio 2 column page</a>
+                                                    <a class="nav-link" href="#" title="Portfolio 2 column page">Portfolio 2 column page</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="#">Portfolio 3 column page</a>
+                                                    <a class="nav-link" href="#" title="Portfolio 3 column page">Portfolio 3 column page</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</span></a>
+                                        <a class="nav-link" href="#" title="Blog">Blog</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
+                                        <a class="nav-link" href="#" title="Features">Features</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contacts</a>
+                                        <a class="nav-link" href="#" title="Contacts">Contacts</a>
                                     </li>
                                     <li class="nav-item">
                                         <form method="post" class="searchform" action="#">
@@ -61,7 +61,7 @@
                                                 <input placeholder="search..." type="text" name="q" maxlength="30" size="20">
                                             </div>
                                             <div class="searchform-input-submit">
-                                                <input type="submit" name="submit">
+                                                <input type="submit" name="submit" value="">
                                             </div>
                                         </form>
                                     </li>
@@ -91,13 +91,15 @@
             <div class="intro">
                 <div class="container">
                     <div class="row">
-                        <div class="intro-table table">
-                            <div class="intro-table__column table-cell">
-                                <h3>Some of our top services</h3>
-                                <p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
-                            </div>
-                            <div class="intro-table__column table-cell">
-                                <a class="red-button large-button" href="#services/all" title="View more">VIEW MORE</a>
+                        <div class="col-xs-12">
+                            <div class="intro-table table">
+                                <div class="intro-table__column table-cell">
+                                    <h3>Some of our top services</h3>
+                                    <p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
+                                </div>
+                                <div class="intro-table__column table-cell">
+                                    <a class="red-button large-button" href="#services/all" title="View more">VIEW MORE</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,11 +147,14 @@
             </div>
         </section>
         <section>
-            <div class="about text-center">
+            <div class="about linear-white text-center">
                 <div class="container">
                     <div class="row">
                         <h2 class="about-title">WHY MODUS VERSUS?</h2>
                         <p class="about-description">Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
+                        <div class="about-cards">
+                            <div class="maincard"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,33 +216,109 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="clients">
-                        <div class="textline">
-                            <h5 class="textline-title">Our Happy Clients</h5>
+                    <div class="col-xs-12">
+                        <div class="clients">
+                            <div class="clients-title textline">
+                                <h5 class="textline-title">Our Happy Clients</h5>
+                            </div>
+                            <div class="inline-slider">
+                                <ul class="clients-slider">
+                                    <li><img src="img/technologies/1.png" alt="client 1"/></li>
+                                    <li><img src="img/technologies/2.png" alt="client 2"/></li>
+                                    <li><img src="img/technologies/3.png" alt="client 3"/></li>
+                                    <li><img src="img/technologies/4.png" alt="client 4"/></li>
+                                    <li><img src="img/technologies/5.png" alt="client 5"/></li>
+                                    <li><img src="img/technologies/6.png" alt="client 6"/></li>
+                                    <li><img src="img/technologies/7.png" alt="client 7"/></li>
+                                    <li><img src="img/technologies/8.png" alt="client 8"/></li>
+                                    <li><img src="img/technologies/9.png" alt="client 9"/></li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="clients-slider">
-                            <li><img src="img/technologies/1.png" alt="client 1"/></li>
-                            <li><img src="img/technologies/2.png" alt="client 2"/></li>
-                            <li><img src="img/technologies/3.png" alt="client 3"/></li>
-                            <li><img src="img/technologies/4.png" alt="client 4"/></li>
-                            <li><img src="img/technologies/5.png" alt="client 5"/></li>
-                            <li><img src="img/technologies/6.png" alt="client 6"/></li>
-                            <li><img src="img/technologies/7.png" alt="client 7"/></li>
-                            <li><img src="img/technologies/8.png" alt="client 8"/></li>
-                            <li><img src="img/technologies/9.png" alt="client 9"/></li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><i class="fa fa-times"></i></div>
-        <div class="hFooter"></div>
+        <div class="footer-clearfix"></div>
     </div>
     <footer class="footer">
-        <div class="copyright centertext">
+        <div class="footer-info">
             <div class="container">
-                <div class="col-xs-12">
-                    @ copyright
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="logo" href="/" title="Main page">Modus <span>versus</span></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+                        <div class="contact">
+                            <span class="inline-block">Phone:</span><a class="inline-block contact-text" href="tel:+18225695896" title="call us">182 2569 5896</a>
+                        </div>
+                        <div class="contact">
+                            <span class="inline-block">E-mail:</span><a class="inline-block contact-text" href="mailto:info@modu.versus" title="email us">info@modu.versus</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="list-title">Company</span>
+                                <div class="text-center">
+                                    <ul class="list">
+                                        <li class="list-item"><a href="#" title="About">About</a></li>
+                                        <li class="list-item"><a href="#" title="FAQ">FAQ</a></li>
+                                        <li class="list-item"><a href="#" title="Contact">Contact</a></li>
+                                        <li class="list-item"><a href="#" title="Terms">Terms</a></li>
+                                        <li class="list-item"><a href="#" title="Privacy">Privacy</a></li>
+                                        <li class="list-item"><a href="#" title="Testimonials">Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="list-title">Community</span>
+                                <div class="text-center">
+                                    <ul class="list">
+                                        <li class="list-item"><a href="#" title="Blog">Blog</a></li>
+                                        <li class="list-item"><a href="#" title="Forum">Forum</a></li>
+                                        <li class="list-item"><a href="#" title="Support">Support</a></li>
+                                        <li class="list-item"><a href="#" title="Newsletter">Newsletter</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="list-title list-title-white"><i>From the </i><strong class="uppercase">Blog</strong></span>
+                        <ul class="widget widget-blog">
+                           <li class="widget-item">
+                               <div class="widget-item__img"></div>
+                               <div class="widget-item__description">
+                                   <a class="widget-item__description-title" href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                   <time class="widget-item__description-date" datetime="2013-05-26">26 May 2013</time>
+                               </div>
+                           </li>
+                            <li class="widget-item">
+                                <div class="widget-item__img"></div>
+                                <div class="widget-item__description">
+                                    <a class="widget-item__description-title" href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    <time class="widget-item__description-date" datetime="2013-05-26">26 May 2013</time>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p>&copy; <a href="https://github.com/ucozlab/" target="_blank" title="Luzhanovskyi Artem Github profile">Luzhanovskyi Artem</a> 4 MOC / 2016</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="social text-right">
+                            <a href="#facebook" title="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#google-plus" title="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#twitter" title="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#rss" title="rss"><i class="fa fa-rss"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

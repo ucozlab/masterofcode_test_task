@@ -52,8 +52,8 @@
 			line-height: 54px;
 		}
 		&.bx-prev {
-			.topleftradius(0) !important;
-			.bottomleftradius(0) !important;
+			.topleftradius(0);
+			.bottomleftradius(0);
 			left:0;
 			&:before {
 				content: "\f100";
@@ -61,8 +61,8 @@
 			}
 		}
 		&.bx-next {
-			.toprightradius(0) !important;
-			.bottomrightradius(0) !important;
+			.toprightradius(0);
+			.bottomrightradius(0);
 			right:0;
 			&:before {
 				content: "\f101";
@@ -71,6 +71,14 @@
 		}
 		&:hover {
 			.blue-button;
+			&.bx-prev {
+				.topleftradius(0);
+				.bottomleftradius(0);
+			}
+			&.bx-next {
+				.toprightradius(0);
+				.bottomrightradius(0);
+			}
 		}
 	}
 	.bx-pager {
@@ -87,6 +95,69 @@
 			&:hover {
 				.blue-button;
 				border: none;
+			}
+		}
+	}
+}
+
+.inline-slider {
+	.bx-viewport ul li {
+		.border-radius(4px);
+		background: darken(@white, 2.5%);
+		text-align: center;
+		height: 90px;
+		img {
+			.inline-block;
+		}
+		&:after {
+			.inline-block;
+			content: "";
+			height: 100%;
+		}
+	}
+	.bx-controls-direction {
+		position: absolute;
+		right: 0;
+		top: -68px;
+		width: 120px;
+		height: 40px;
+		background-color: darken(@white, 4.7%);
+		a {
+			.border-radius(4px) !important;
+			.gray-button;
+			height: 40px;
+			width: 40px;
+			margin-top: 0;
+			text-align: center;
+			color: @white;
+			font-size: 0;
+			top: 0;
+			&:before {
+				.fontawesome;
+				font-size: 20px;
+				text-indent: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				line-height: 40px;
+			}
+			&.bx-prev {
+				right: 59px;
+				left: auto;
+				&:before {
+					content: "\f053";
+					left: 13px;
+				}
+			}
+			&.bx-next {
+				right:0;
+				&:before {
+					content: "\f054";
+					left: 16px;
+				}
+			}
+			&:hover {
+				.red-button;
 			}
 		}
 	}

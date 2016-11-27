@@ -1,21 +1,12 @@
 @import (reference) "config.less";
 .header {
+	.linear;
 	height: 80px;
 	padding: 22px 0;
-	background: lighten(@blue,5.7%);
+	background: @blue2;
 	color: @white;
-	position: relative;
 	a {
 		color: @white;
-	}
-	&:after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		height: 9px;
-		width: 100%;
-		display: block;
-		background: url("../img/linear.svg") repeat-x;
 	}
 }
 .logo {
@@ -28,7 +19,7 @@
 	line-height: 30px;
 	color: @white;
 	&:hover {
-		color: darken(@white, 4.7%);
+		color: @dark2;
 	}
 	span {
 		font-weight: normal;
@@ -56,7 +47,8 @@
 			}
 			&.nav-item--active {
 				.nav-link {
-					.blue-button;
+					background-color: @active;
+					border-bottom: 2px solid darken(@active, 8%);
 				}
 			}
 			&.nav-item-dropdown {
@@ -86,7 +78,7 @@
 								line-height: 32px;
 							}
 							&:hover > .nav-link {
-								background: lighten(@blue,5.7%);
+								background: @blue2;
 							}
 							&:last-child {
 								margin-bottom: 0;
@@ -167,7 +159,7 @@
 			height: 15px;
 		}
 		&:hover:after {
-			color: @red2;
+			color: @dark2;
 		}
 	}
 }
