@@ -11,15 +11,13 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xs-6 col-lg-3 no-padding-right">
                         <a class="logo" href="/" title="Main page">Modus <span>versus</span></a>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-xs-6 col-lg-9">
                         <nav class="navbar text-right">
-                            <button class="collapse navbar-toggler" type="button" data-target="#navbarResponsive">
-                                <i class="fa fa-align-justify" aria-hidden="true"></i>
-                            </button>
-                            <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                            <button class="collapse navbar-toggler" type="button" onclick="navbarToggle('.navbar-toggleable')"></button>
+                            <div class="navbar-toggleable inline-block">
                                 <ul class="nav">
                                     <li class="nav-item nav-item--active">
                                         <a class="nav-link" href="#" title="Home">Home <span class="sr-only">(current)</span></a>
@@ -55,17 +53,17 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#" title="Contacts">Contacts</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <form method="post" class="searchform" action="#">
-                                            <div class="searchform-input-text">
-                                                <input placeholder="search..." type="text" name="q" maxlength="30" size="20">
-                                            </div>
-                                            <div class="searchform-input-submit">
-                                                <input type="submit" name="submit" value="">
-                                            </div>
-                                        </form>
-                                    </li>
                                 </ul>
+                            </div>
+                            <div class="inline-block">
+                                <form method="post" class="searchform" action="#">
+                                    <div class="searchform-input-text">
+                                        <input placeholder="search..." type="text" name="q" maxlength="30" size="20">
+                                    </div>
+                                    <div class="searchform-input-submit">
+                                        <input type="submit" name="submit" value="">
+                                    </div>
+                                </form>
                             </div>
                         </nav>
                     </div>

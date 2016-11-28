@@ -61,7 +61,6 @@
 .transition {
 	transition: all 0.3s ease;
 }
-
 .transition-event(@event) {
 	transition: @event;
 }
@@ -158,6 +157,11 @@
 }
 .uppercase {
 	text-transform: uppercase;
+}
+.no-padding {
+	&-right {
+		padding-right: 0;
+	}
 }
 .red-button {
 	.border-radius(4px);

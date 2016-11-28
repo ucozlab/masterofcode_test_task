@@ -1,3 +1,14 @@
+(function(){
+	
+	if ($.browser.mozilla || navigator.userAgent.indexOf("Firefox") > -1) {
+		
+		$("head").append("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='screen'>" +
+			"<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet'>");
+		
+	}
+	
+})();
+
 $(document).ready(function(){
 
 	var charts = $('.charts'),
@@ -35,26 +46,36 @@ $(document).ready(function(){
 			showed = true;
 		};
 	});
+	
 });
 
 function shuffleCard(string) {
-	var centerWindow = document.querySelector('.about-windows .window-center button'),
-		leftWindow = document.querySelector('.about-windows .window-left button'),
-		rightWindow = document.querySelector('.about-windows .window-right button');
+	
+	var leftWindow,
+		rightWindow,
+		centerWindow = document.querySelector('.about-windows .window-center button'),
+		centerWindowImage = document.querySelector('.about-windows .window-center button').style.backgroundImage;
 
 	if(string === 'left') {
-
+		
+		leftWindow = document.querySelector('.about-windows .window-left button');
 		centerWindow.style.backgroundImage = leftWindow.style.backgroundImage;
-		leftWindow.style.backgroundImage = centerWindow.style.backgroundImage;
+		leftWindow.style.backgroundImage = centerWindowImage;
 
 	} else if(string === 'right') {
-
+		
+		rightWindow = document.querySelector('.about-windows .window-right button')
 		centerWindow.style.backgroundImage = rightWindow.style.backgroundImage;
-		rightWindow.style.backgroundImage = centerWindow.style.backgroundImage;
+		rightWindow.style.backgroundImage = centerWindowImage;
 
 	} else {
 
 		return false;
 
 	}
+
+}
+
+function navbarToggle(element) {
+	$(element).slideToggle(300);
 }

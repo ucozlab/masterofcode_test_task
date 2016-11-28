@@ -9,7 +9,6 @@ var gulp         = require('gulp'),
 		scripts : [
 			'./layout/js/src/jquery.min.js',
 			'./layout/js/src/chart.js',
-			'./layout/js/src/bootstrap_resize.js',
 			'./node_modules/bxslider/dist/jquery.bxslider.min.js',
 			'./layout/js/src/main.js'
 		]
@@ -19,7 +18,7 @@ gulp.task('compile-less', function() {
 	gulp.src('./layout/less/style.less')
 		.pipe(less())
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
+			browsers: ['last 5 versions'],
 			cascade: false
 		}))
 		.pipe(cleanCSS({advanced : false}))

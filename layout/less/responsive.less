@@ -3,12 +3,13 @@
 		margin: 0;
 		width: 45%;
 	}
-	.navbar-toggler {
-		display: inline-block;
-	}
-}
-@media (min-width: 992px) {
-	.navbar-toggleable-md {
-		display: block;
+	.navbar {
+		&-toggler {
+			display: inline-block;
+		}
+		&-toggleable {
+			display: none;
+			.mobile-dropdown;
+		}
 	}
 }
